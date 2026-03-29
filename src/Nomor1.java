@@ -16,7 +16,7 @@ public class Nomor1 {
 
         // 3. Stack hasil
         Stack<String> stack = new Stack<>();
-        for (int i : order) {
+        for (int i : order) {   
             stack.push(pairs.get(i)[0]);
             stack.push(pairs.get(i)[1]);
         }
