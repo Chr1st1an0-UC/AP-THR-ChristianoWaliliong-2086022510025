@@ -64,9 +64,9 @@ public class Nomor2 {
 
         while (!queue.isEmpty()) {
             String name = queue.poll();
-            if (stand.expose(name)) {
+            if (stand != null && stand.expose(name)) {
                 arrested.push(name.toLowerCase());
-            }
+            }       
         }
 
         if (arrested.isEmpty()) {
